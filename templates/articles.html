@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for article in articles %}
+<div class = 'container'>
+  Top of the Artcle: <h2>{{article.title}}</h2>
+  
+  <p>{{article.artile}}</p>
+
+  Author of the Artcle:<h4>{{article.author}}</h4> <br />
+</div>
+
+{% endfor %}
+
+
+  
+{% endblock content %}
